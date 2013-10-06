@@ -106,6 +106,38 @@ h1{
 .images{
   height: 300px;
 }
+
+
+.info{
+  width: 100%;
+  height: 100px;
+  background: #FFFFFF;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 700;
+}
+
+.info-wrap{
+  width: 60%;
+  margin: 0 auto;
+}
+
+.inquiries {
+  width: 50%;
+  float: left;
+  text-align: left;
+}
+
+.projects {
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+
+.info a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+}
 /* ==========================================================================
    FOOTER
    ========================================================================== */
