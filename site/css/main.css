@@ -107,13 +107,18 @@ h1{
   height: 300px;
 }
 
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
 
 .info{
   width: 100%;
-  height: 100px;
+  height: 131px;
   background: #FFFFFF;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 700;
+  font-weight: 700;
+  padding-top: 10px;
 }
 
 .info-wrap{
@@ -133,16 +138,49 @@ h1{
   text-align: right;
 }
 
-.info a {
+.info a,
+.info a:active,
+.info a:visited {
   text-decoration: none;
   color: #000;
   text-transform: uppercase;
 }
-/* ==========================================================================
-   FOOTER
-   ========================================================================== */
 
-footer {
+.info a:hover {
+  color: #6B6C6D;
+}
+
+
+.nav {
+  width: 700px;
+  margin: 0 auto;
+  color: #6B6C6D;
+}
+
+.phone,
+.mail,
+.facebook {
+  display: inline-block;
+}
+
+.nav-item{
+  display: inline-block;
+  width: 32%;
+  text-transform: uppercase;
+}
+
+.nav-item p {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 2px
+}
+
+
+.nav-item i {
+  display: block;
+  font-size: 30px;
+  text-align: center;
 
 }
 
