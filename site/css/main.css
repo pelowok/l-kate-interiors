@@ -313,8 +313,77 @@ h3:hover {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 400px) {
     /* Style adjustments for viewports that meet the condition */
+  h1 {
+    font-size: 16px;
+    margin: -26px 0 0 0;
+    padding: 0 0 9px 0;
+  }
+
+  h2.logo {
+    font-size: 136px;
+    margin: -10px 0 0 -11px;
+    line-height: 149px;
+  }
+
+  .col1,
+  .col2 {
+    height: 203px;
+    width: 152px;
+    margin: 0 1px;
+    display: inline-block;
+    margin-top: 192px;
+  }
+
+  .col3, 
+  .col4{
+    display: none;
+  }
+
+  .wrap {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .images-wrap {
+    width: 313px;
+    margin: 0 auto;
+  }
+
+  .info-wrap {
+    width: 100%;
+  }
+
+  .inquiries,
+  .projects {
+    padding-top: 0px;
+    width: 100%;
+    float: none;
+  }
+
+  .col1 {
+    background: url('../img/1-trim-mb.png') no-repeat left top;
+  }
+
+.col2 {
+    background: url('../img/2-trim-mb.png') no-repeat left top;
+  }
+
+  .h3 {
+    font-size: 13px
+  }
+
+  .nav-item {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .info {
+    height: 196px;
+    margin-top: -4px;
+  }
+
 }
 
 @media print,
@@ -324,74 +393,4 @@ h3:hover {
     /* Style adjustments for high resolution devices */
 }
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
-
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    @page {
-        margin: 0.5cm;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
 }
