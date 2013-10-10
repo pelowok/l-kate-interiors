@@ -41,7 +41,7 @@ body {
   src: url('fonts/blair-itc-tt-light-1361544263.eot');
   src: local('☺'), url('fonts/blair-itc-tt-light-1361544263.woff') format('woff'), url('fonts/blair-itc-tt-light-1361544263.ttf') format('truetype'), url('fonts/blair-itc-tt-light-1361544263.svg') format('svg');
   font-weight: 100;
-  font-style: 100;
+  font-style: normal;
 }
 
 @font-face {
@@ -49,9 +49,8 @@ body {
   src: url('fonts/blair-md-itc-tt-medium-1361544262.eot');
   src: local('☺'), url('fonts/blair-md-itc-tt-medium-1361544262.woff') format('woff'), url('fonts/blair-md-itc-tt-medium-1361544262.ttf') format('truetype'), url('fonts/blair-md-itc-tt-medium-1361544262.svg') format('svg');
   font-weight: 300;
-  font-style: 100;
+  font-style: normal;
 }
-
 
 header {
   background: #D1D2D4;
@@ -95,10 +94,9 @@ h1{
 .col1,
 .col2,
 .col3,
-.col4,
-.col5{
-  height: 100%;
-  width: 186px;
+.col4{
+  height: 312px;
+  width: 234px;
   margin: 0 1px;
   display: inline-block;
   background: white;
@@ -116,9 +114,6 @@ h1{
 .col4{
   background: url('../img/4-trim.png') no-repeat left top;
 }
-.col5{
-  background: url('../img/5-trim.png') no-repeat left top;
-}
 .images{
   height: 300px;
 }
@@ -132,8 +127,6 @@ h1{
   width: 100%;
   height: 139px;
   background: #FFFFFF;
-/*  font-family: 'Josefin Sans', sans-serif;*/
-  font-weight: 700;
   padding-top: 10px;
 }
 
