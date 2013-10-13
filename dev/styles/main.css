@@ -1,0 +1,754 @@
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 11, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+/* line 30, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 50, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+[hidden] {
+  display: none;
+}
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 64, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+html {
+  font-family: sans-serif;
+  /* 1 */
+
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+
+}
+/**
+ * Remove default margin.
+ */
+/* line 74, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+body {
+  margin: 0;
+}
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 86, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+a:focus {
+  outline: thin dotted;
+}
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 94, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+a:active,
+a:hover {
+  outline: 0;
+}
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 108, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 117, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 125, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+b,
+strong {
+  font-weight: bold;
+}
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 134, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+dfn {
+  font-style: italic;
+}
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 142, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 152, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+mark {
+  background: #ff0;
+  color: #000;
+}
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+/* line 161, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 173, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+pre {
+  white-space: pre-wrap;
+}
+/**
+ * Set consistent quote types.
+ */
+/* line 181, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 189, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 197, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+/* line 205, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+sup {
+  top: -0.5em;
+}
+/* line 209, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+sub {
+  bottom: -0.25em;
+}
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 221, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+img {
+  border: 0;
+}
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 229, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 241, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+figure {
+  margin: 0;
+}
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 253, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 264, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+legend {
+  border: 0;
+  /* 1 */
+
+  padding: 0;
+  /* 2 */
+
+}
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 275, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+
+  font-size: 100%;
+  /* 2 */
+
+  margin: 0;
+  /* 3 */
+
+}
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 289, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+button,
+input {
+  line-height: normal;
+}
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 301, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+button,
+select {
+  text-transform: none;
+}
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 314, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+
+  cursor: pointer;
+  /* 3 */
+
+}
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 326, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+/* line 336, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+
+  padding: 0;
+  /* 2 */
+
+}
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 348, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+
+  box-sizing: content-box;
+}
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 360, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 369, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 380, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+textarea {
+  overflow: auto;
+  /* 1 */
+
+  vertical-align: top;
+  /* 2 */
+
+}
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 393, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/normalize.less */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+/* line 9, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+html {
+  height: 100%;
+}
+/* line 13, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+body {
+  /*background: 
+    linear-gradient(135deg, #FFFFFF 25%, transparent 25%) -25px 0,
+    linear-gradient(225deg, #FFFFFF 25%, transparent 25%) -25px 0,
+    linear-gradient(315deg, #FFFFFF 25%, transparent 25%),
+    linear-gradient(45deg, #FFFFFF 25%, transparent 25%); 
+    background-size: 50px 50px;
+    background-color: #D1D2D4;
+   width: 100% */
+
+  background: url('../img/bg-trans.png') repeat left top;
+  font-family: 'Blair', 'Hevetica', sans-serif;
+}
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+/* line 31, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+@font-face {
+  font-family: 'Blair';
+  src: url('fonts/blair-itc-tt-light-1361544263.eot');
+  src: local('☺'), url('fonts/blair-itc-tt-light-1361544263.woff') format('woff'), url('fonts/blair-itc-tt-light-1361544263.ttf') format('truetype'), url('fonts/blair-itc-tt-light-1361544263.svg') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Blair';
+  src: url('fonts/blair-md-itc-tt-medium-1361544262.eot');
+  src: local('☺'), url('fonts/blair-md-itc-tt-medium-1361544262.woff') format('woff'), url('fonts/blair-md-itc-tt-medium-1361544262.ttf') format('truetype'), url('fonts/blair-md-itc-tt-medium-1361544262.svg') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+/* line 58, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+header {
+  background: #D1D2D4;
+  width: 100%;
+  text-align: center;
+  color: #FFF;
+  margin-top: 50px;
+  text-shadow: 2px 2px 2px #969696;
+  text-transform: uppercase;
+  -moz-box-shadow: 0px 10px 5px rgba(82, 75, 75, 0.7);
+  -webkit-box-shadow: 0px 10px 5px rgba(82, 75, 75, 0.7);
+  box-shadow: 0px 10px 5px rgba(82, 75, 75, 0.7);
+  position: absolute;
+  z-index: 1;
+}
+/* line 73, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+h2.logo {
+  font-size: 190px;
+  font-weight: 100;
+  margin: 0 0 0 -11px;
+  letter-spacing: -10px;
+  -webkit-font-smoothing: antialiased;
+  line-height: 178px;
+}
+/* line 82, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+h1 {
+  font-size: 21px;
+  font-weight: 100;
+  letter-spacing: -1px;
+  margin: -14px 0 0 0;
+  padding: 0 0 12px 0;
+  -webkit-font-smoothing: antialiased;
+}
+/* ==========================================================================
+   BODY
+   ========================================================================== */
+/* line 98, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.wrap {
+  width: 960px;
+  margin: 0 auto;
+}
+/* line 102, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.col1,
+.col2,
+.col3,
+.col4 {
+  height: 312px;
+  width: 234px;
+  margin: 0 1px;
+  display: inline-block;
+  margin-top: 250px;
+}
+/* line 113, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.col1 {
+  background: url('../img/1-trim.png') no-repeat left top;
+}
+/* line 116, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.col2 {
+  background: url('../img/2-trim.png') no-repeat left top;
+}
+/* line 119, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.col3 {
+  background: url('../img/3-trim.png') no-repeat left top;
+}
+/* line 122, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.col4 {
+  background: url('../img/4-trim.png') no-repeat left top;
+}
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+/* line 132, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.info {
+  width: 100%;
+  height: 139px;
+  background: #FFFFFF;
+  padding-top: 10px;
+  margin-top: -15px;
+}
+/* line 140, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.info-wrap {
+  width: 60%;
+  margin: 0 auto;
+}
+/* line 145, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.inquiries {
+  width: 50%;
+  float: left;
+  text-align: center;
+  padding-top: 10px;
+}
+/* line 152, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.projects {
+  width: 50%;
+  float: right;
+  text-align: center;
+  padding-top: 10px;
+}
+/* line 159, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.info a,
+.info a:active,
+.info a:visited {
+  text-decoration: none;
+  color: #6B6C6D;
+  text-transform: uppercase;
+}
+/* line 167, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.info a:hover {
+  color: #000;
+}
+/* line 172, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.phone,
+.mail,
+.facebook {
+  display: inline-block;
+}
+/* line 178, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.nav-item {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  font-weight: 100;
+}
+/* line 185, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+h3,
+h3:visited,
+h3:active {
+  font-size: 15px;
+  font-weight: 300;
+  color: #000;
+}
+/* line 193, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+h3:hover {
+  color: #6B6C6D;
+}
+/* line 197, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.nav-item p {
+  display: inline;
+  font-size: 14px;
+  margin-left: 10px;
+}
+/* line 204, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.nav-item i {
+  display: inline;
+  font-size: 15px;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+/* line 220, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+
+  *text-indent: -9999px;
+}
+/* line 228, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 239, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 248, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 264, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 278, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.invisible {
+  visibility: hidden;
+}
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 294, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+/* line 300, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.clearfix:after {
+  clear: both;
+}
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 309, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.clearfix {
+  *zoom: 1;
+}
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (max-width: 400px) {
+  /* Style adjustments for viewports that meet the condition */
+  /* line 321, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  h1 {
+    font-size: 16px;
+    margin: -26px 0 0 0;
+    padding: 0 0 9px 0;
+  }
+  /* line 327, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  h2.logo {
+    font-size: 136px;
+    margin: -10px 0 0 -11px;
+    line-height: 149px;
+  }
+  /* line 333, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  .col1,
+  .col2 {
+    height: 203px;
+    width: 152px;
+    margin: 0 1px;
+    display: inline-block;
+    margin-top: 192px;
+  }
+  /* line 342, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  .col3,
+  .col4 {
+    display: none;
+  }
+  /* line 347, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  .wrap {
+    width: 100%;
+    margin: 0 auto;
+  }
+  /* line 352, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  .images-wrap {
+    width: 313px;
+    margin: 0 auto;
+  }
+  /* line 357, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  .info-wrap {
+    width: 100%;
+  }
+  /* line 361, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  .inquiries,
+  .projects {
+    padding-top: 0px;
+    width: 100%;
+    float: none;
+  }
+  /* line 368, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  .col1 {
+    background: url('../img/1-trim-mb.png') no-repeat left top;
+  }
+  /* line 372, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  .col2 {
+    background: url('../img/2-trim-mb.png') no-repeat left top;
+  }
+  /* line 376, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  .h3 {
+    font-size: 13px;
+  }
+  /* line 380, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  .nav-item {
+    width: 100%;
+    font-size: 12px;
+  }
+  /* line 385, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  .info {
+    height: 196px;
+    margin-top: -4px;
+  }
+}

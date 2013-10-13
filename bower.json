@@ -1,0 +1,17 @@
+{
+  "name": "lkate",
+  "version": "0.0.0",
+  "homepage": "https://github.com/bhstahl/l-kate-interiors",
+  "authors": [
+    "@bhstahl"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "font-awesome": "~3.2.1"
+  }
+}
