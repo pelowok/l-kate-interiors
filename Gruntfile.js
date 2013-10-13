@@ -20,38 +20,10 @@ module.exports = function(grunt) {
         }
       }
     },
-    concat: {
-      options: {
-        separator: ';'
-      },
-      dist: {
-        src: ['dev/scripts/**/*.js'],
-        dest: 'prod/<%= pkg.name %>.js'
-      }
-    },
-    uglify: {
-      options: {
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
-      },
-      dist: {
-        files: {
-          'dist/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
-        }
-      }
-    },
-    jshint: {
-      files: ['Gruntfile.js',
-              'dev/**/*.js',
-              ],
-      options: {
-        jshintrc: '.jshintrc',
-        ignores: ['bower_components/**']
-      }
-    },
     less: {
       build: {
         options: {
-          paths: ['src/styles'],
+          paths: ['dev/styles'],
           yuicompress: true
         },
         files: {
@@ -74,7 +46,6 @@ module.exports = function(grunt) {
         tasks: ['less:watch']
       },
       files: ['dev/*'],
-      // tasks: ['jshint'],
       options: {
         livereload: true,
         dateFormat: function(time) {
@@ -82,30 +53,39 @@ module.exports = function(grunt) {
           grunt.log.writeln('Waiting for more changes...');
         },
       }
+    },
+    imagemin: {
+      dynamic: {
+        files: [{
+          expand: true,
+          cwd: 'dev/img',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: 'prod/img'
+        }]
+      }
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-less');
-
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.registerTask('default', ['connect', 'open', 'watch']);
-  grunt.registerTask('test', ['jshint']);
-  
-  grunt.registerTask('build', ['jshint', 'concat', 'uglify', 'less:build']);
 
   // Allows for production server by running 'grunt server:prod'
   grunt.registerTask('server', function (target) {
     if (target === 'prod') {
-      return grunt.task.run(['build']);
+      grunt.task.run([
+      'less:build',
+      'imagemin',
+      'connect:prod',
+      'watch'
+    ]);
     }
 
     grunt.task.run([
-      'connect:dev',
       'less:watch',
+      'connect:dev',
       'watch'
     ]);
   });
