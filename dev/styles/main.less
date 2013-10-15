@@ -2,7 +2,7 @@
 @import "/dev/styles/common/mixins.less";
 @import "/bower_components/font-awesome/less/font-awesome.less";
 
-
+@grey: #D1D2D4;
 
 /* ==========================================================================
    Base styles
@@ -19,9 +19,9 @@ body {
     linear-gradient(315deg, #FFFFFF 25%, transparent 25%),
     linear-gradient(45deg, #FFFFFF 25%, transparent 25%); 
     background-size: 50px 50px;
-    background-color: #D1D2D4;
+    background-color: @grey;
    width: 100% */
-  background: url('../img/bg-trans.png') repeat left top;
+  background: url('../img/lki-bg-tight.png') repeat left top;
   font-family: 'Blair', 'Hevetica', sans-serif;;
 } 
 
@@ -58,16 +58,13 @@ body {
 }
 
 header {
-  background: #D1D2D4;
+  background: @grey;
   width: 100%;
   text-align: center;
   color: #FFF;
   margin-top: 50px;
   text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
   text-transform: uppercase;
-  .box-shadow(0px 10px 5px rgba(82, 75, 75, 0.7));
-  position: absolute;
-  z-index: 1;
 }
 
 h2.logo{
@@ -76,7 +73,7 @@ h2.logo{
   margin: 0 0 0 -11px;
   letter-spacing: -10px;
   -webkit-font-smoothing: antialiased;
-  line-height: 178px;
+  line-height: 167px;
 }
 
 h1{
@@ -107,7 +104,6 @@ h1{
   width: 234px;
   margin: 0 1px;
   display: inline-block;
-  margin-top: 250px;
 }
 
 .col1{
@@ -131,10 +127,9 @@ h1{
 
 .info{
   width: 100%;
-  height: 139px;
-  background: #FFFFFF;
+  height: 189px;
+  background: @grey;
   padding-top: 10px;
-  margin-top: -15px;
 }
 
 .info-wrap{
@@ -142,18 +137,20 @@ h1{
   margin: 0 auto;
 }
 
+.images-wrap{
+  height: 312px;
+}
+
 .inquiries {
-  width: 50%;
-  float: left;
+  width: 100%;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 0px;
 }
 
 .projects {
-  width: 50%;
-  float: right;
+  width: 100%;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 .info a,
@@ -338,7 +335,6 @@ h3:hover {
     width: 152px;
     margin: 0 1px;
     display: inline-block;
-    margin-top: 192px;
   }
 
   .col3, 
@@ -349,6 +345,7 @@ h3:hover {
   .wrap {
     width: 100%;
     margin: 0 auto;
+    height: 207px;
   }
 
   .images-wrap {

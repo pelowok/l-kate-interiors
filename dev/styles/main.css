@@ -2346,10 +2346,10 @@ body {
     linear-gradient(315deg, #FFFFFF 25%, transparent 25%),
     linear-gradient(45deg, #FFFFFF 25%, transparent 25%); 
     background-size: 50px 50px;
-    background-color: #D1D2D4;
+    background-color: @grey;
    width: 100% */
 
-  background: url('../img/bg-trans.png') repeat left top;
+  background: url('../img/lki-bg-tight.png') repeat left top;
   font-family: 'Blair', 'Hevetica', sans-serif;
 }
 /* ==========================================================================
@@ -2381,35 +2381,24 @@ body {
 }
 /* line 60, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 header {
-  background: #D1D2D4;
+  background: #d1d2d4;
   width: 100%;
   text-align: center;
   color: #FFF;
   margin-top: 50px;
   text-shadow: 2px 2px 2px #969696;
   text-transform: uppercase;
-  -moz-box-shadow: 0px 10px 5px rgba(82, 75, 75, 0.7);
-  /* FF 3.5+ */
-
-  -webkit-box-shadow: 0px 10px 5px rgba(82, 75, 75, 0.7);
-  /* Safari 3+, Chrome */
-
-  box-shadow: 0px 10px 5px rgba(82, 75, 75, 0.7);
-  /* Opera 10.5, IE 9, Chrome 10+ */
-
-  position: absolute;
-  z-index: 1;
 }
-/* line 73, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 70, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 h2.logo {
   font-size: 190px;
   font-weight: 100;
   margin: 0 0 0 -11px;
   letter-spacing: -10px;
   -webkit-font-smoothing: antialiased;
-  line-height: 178px;
+  line-height: 167px;
 }
-/* line 82, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 79, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 h1 {
   font-size: 21px;
   font-weight: 100;
@@ -2421,12 +2410,12 @@ h1 {
 /* ==========================================================================
    BODY
    ========================================================================== */
-/* line 98, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 95, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .wrap {
   width: 960px;
   margin: 0 auto;
 }
-/* line 102, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 99, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .col1,
 .col2,
 .col3,
@@ -2435,55 +2424,55 @@ h1 {
   width: 234px;
   margin: 0 1px;
   display: inline-block;
-  margin-top: 250px;
 }
-/* line 113, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 109, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .col1 {
   background: url('../img/1-trim.png') no-repeat left top;
 }
-/* line 116, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 112, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .col2 {
   background: url('../img/2-trim.png') no-repeat left top;
 }
-/* line 119, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 115, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .col3 {
   background: url('../img/3-trim.png') no-repeat left top;
 }
-/* line 122, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 118, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .col4 {
   background: url('../img/4-trim.png') no-repeat left top;
 }
 /* ==========================================================================
    FOOTER
    ========================================================================== */
-/* line 132, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 128, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .info {
   width: 100%;
-  height: 139px;
-  background: #FFFFFF;
+  height: 189px;
+  background: #d1d2d4;
   padding-top: 10px;
-  margin-top: -15px;
 }
-/* line 140, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 135, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .info-wrap {
   width: 60%;
   margin: 0 auto;
 }
-/* line 145, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 140, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.images-wrap {
+  height: 312px;
+}
+/* line 144, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .inquiries {
-  width: 50%;
-  float: left;
+  width: 100%;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 0px;
 }
-/* line 152, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 150, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .projects {
-  width: 50%;
-  float: right;
+  width: 100%;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 15px;
 }
-/* line 159, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 156, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .info a,
 .info a:active,
 .info a:visited {
@@ -2491,24 +2480,24 @@ h1 {
   color: #6B6C6D;
   text-transform: uppercase;
 }
-/* line 167, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 164, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .info a:hover {
   color: #000;
 }
-/* line 172, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 169, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .phone,
 .mail,
 .facebook {
   display: inline-block;
 }
-/* line 178, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 175, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .nav-item {
   display: inline-block;
   text-transform: uppercase;
   margin-bottom: 4px;
   font-weight: 100;
 }
-/* line 185, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 182, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 h3,
 h3:visited,
 h3:active {
@@ -2516,22 +2505,22 @@ h3:active {
   font-weight: 300;
   color: #000;
 }
-/* line 193, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 190, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 h3:hover {
   color: #6B6C6D;
 }
-/* line 197, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 194, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .nav-item p {
   display: inline;
   font-size: 14px;
   margin-left: 10px;
 }
-/* line 204, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 201, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .nav-item i {
   display: inline;
   font-size: 15px;
 }
-/* line 209, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 206, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .phone-icon {
   font-family: FontAwesome;
   font-weight: normal;
@@ -2547,7 +2536,7 @@ h3:hover {
 /*
  * Image replacement
  */
-/* line 222, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 219, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .ir {
   background-color: transparent;
   border: 0;
@@ -2556,7 +2545,7 @@ h3:hover {
 
   *text-indent: -9999px;
 }
-/* line 230, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 227, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .ir:before {
   content: "";
   display: block;
@@ -2566,7 +2555,7 @@ h3:hover {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 241, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 238, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -2574,7 +2563,7 @@ h3:hover {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 250, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 247, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -2589,7 +2578,7 @@ h3:hover {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 266, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 263, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -2602,7 +2591,7 @@ h3:hover {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 280, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 277, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .invisible {
   visibility: hidden;
 }
@@ -2617,7 +2606,7 @@ h3:hover {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 296, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 293, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -2627,7 +2616,7 @@ h3:hover {
   /* 2 */
 
 }
-/* line 302, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 299, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .clearfix:after {
   clear: both;
 }
@@ -2635,7 +2624,7 @@ h3:hover {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 311, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 308, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .clearfix {
   *zoom: 1;
 }
@@ -2646,71 +2635,71 @@ h3:hover {
    ========================================================================== */
 @media only screen and (max-width: 400px) {
   /* Style adjustments for viewports that meet the condition */
-  /* line 323, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  /* line 320, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
   h1 {
     font-size: 16px;
     margin: -26px 0 0 0;
     padding: 0 0 9px 0;
   }
-  /* line 329, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  /* line 326, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
   h2.logo {
     font-size: 136px;
     margin: -10px 0 0 -11px;
     line-height: 149px;
   }
-  /* line 335, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  /* line 332, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
   .col1,
   .col2 {
     height: 203px;
     width: 152px;
     margin: 0 1px;
     display: inline-block;
-    margin-top: 192px;
   }
-  /* line 344, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  /* line 340, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
   .col3,
   .col4 {
     display: none;
   }
-  /* line 349, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  /* line 345, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
   .wrap {
     width: 100%;
     margin: 0 auto;
+    height: 207px;
   }
-  /* line 354, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  /* line 351, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
   .images-wrap {
     width: 313px;
     margin: 0 auto;
   }
-  /* line 359, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  /* line 356, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
   .info-wrap {
     width: 100%;
   }
-  /* line 363, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  /* line 360, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
   .inquiries,
   .projects {
     padding-top: 0px;
     width: 100%;
     float: none;
   }
-  /* line 370, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  /* line 367, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
   .col1 {
     background: url('../img/1-trim-mb.png') no-repeat left top;
   }
-  /* line 374, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  /* line 371, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
   .col2 {
     background: url('../img/2-trim-mb.png') no-repeat left top;
   }
-  /* line 378, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  /* line 375, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
   .h3 {
     font-size: 13px;
   }
-  /* line 382, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  /* line 379, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
   .nav-item {
     width: 100%;
     font-size: 12px;
   }
-  /* line 387, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  /* line 384, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
   .info {
     height: 196px;
     margin-top: -4px;
