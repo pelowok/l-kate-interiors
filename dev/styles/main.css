@@ -383,6 +383,849 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/*
+ * Simple Fade In
+ */
+@-webkit-keyframes fadeIn {
+  /* line 5, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 0;
+  }
+  /* line 6, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  /* line 10, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 0;
+  }
+  /* line 11, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  /* line 15, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 0;
+  }
+  /* line 16, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 1;
+  }
+}
+/*
+ * Fade In with a Scale Up
+ */
+@-webkit-keyframes fadeInScaleUp {
+  /* line 24, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+  }
+  /* line 28, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+}
+@-moz-keyframes fadeInScaleUp {
+  /* line 35, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -moz-transform: scale(0);
+  }
+  /* line 39, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -moz-transform: scale(1);
+  }
+}
+@keyframes fadeInScaleUp {
+  /* line 46, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  /* line 50, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/*
+ * Fade in and animate up
+ */
+@-webkit-keyframes fadeInUp {
+  /* line 61, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px) scale(0.95);
+  }
+  /* line 66, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  25% {
+    opacity: 1;
+    -webkit-transform: translateY(0) scale(1);
+  }
+  /* line 71, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0) scale(1);
+  }
+}
+@-moz-keyframes fadeInUp {
+  /* line 78, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(20px) scale(0.95);
+  }
+  /* line 83, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  25% {
+    opacity: 1;
+    -moz-transform: translateY(0) scale(1);
+  }
+  /* line 88, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0) scale(1);
+  }
+}
+@keyframes fadeInUp {
+  /* line 95, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  /* line 100, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  25% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  /* line 105, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+/**
+ * Fade in from the left
+ */
+@-webkit-keyframes fadeInLeft {
+  /* line 115, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+  }
+  /* line 120, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes fadeInLeft {
+  /* line 127, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-20px);
+  }
+  /* line 132, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+@-o-keyframes fadeInLeft {
+  /* line 139, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -o-transform: translateX(-20px);
+  }
+  /* line 144, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+}
+@keyframes fadeInLeft {
+  /* line 151, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  /* line 156, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/**
+ * Fade in from the right
+ */
+@-webkit-keyframes fadeInRight {
+  /* line 166, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+  }
+  /* line 171, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes fadeInRight {
+  /* line 178, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(20px);
+  }
+  /* line 183, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+@-o-keyframes fadeInRight {
+  /* line 190, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -o-transform: translateX(20px);
+  }
+  /* line 195, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+}
+@keyframes fadeInRight {
+  /* line 202, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  /* line 207, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/*
+ * Fade out and animate down
+ */
+@-webkit-keyframes fadeOutDown {
+  /* line 218, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0) scale(1);
+  }
+  /* line 223, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  25% {
+    opacity: 0;
+    -webkit-transform: translateY(20px) scale(0.95);
+  }
+  /* line 228, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(20px) scale(0.95);
+  }
+}
+@-moz-keyframes fadeOutDown {
+  /* line 235, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 1;
+    -moz-transform: translateY(0) scale(1);
+  }
+  /* line 240, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  25% {
+    opacity: 0;
+    -moz-transform: translateY(20px) scale(0.95);
+  }
+  /* line 245, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(20px) scale(0.95);
+  }
+}
+@keyframes fadeOutDown {
+  /* line 252, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  /* line 257, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  25% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  /* line 262, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    transform: translateY(20px) scale(0.95);
+  }
+}
+/**
+ * Fade in while sliding in from the top
+ */
+@-webkit-keyframes slideFromTop {
+  /* line 272, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  from {
+    -webkit-transform: translateY(-1000px);
+    opacity: 0;
+  }
+  /* line 273, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  to {
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-moz-keyframes slideFromTop {
+  /* line 276, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  from {
+    -moz-transform: translateY(-1000px);
+    opacity: 0;
+  }
+  /* line 277, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  to {
+    -moz-transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-o-keyframes slideFromTop {
+  /* line 280, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  from {
+    -o-transform: translateY(-1000px);
+    opacity: 0;
+  }
+  /* line 281, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  to {
+    -o-transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideFromTop {
+  /* line 284, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  from {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  /* line 285, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/**
+ * Fade in while sliding in from the bottom
+ */
+@-webkit-keyframes slideFromBottom {
+  /* line 292, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  from {
+    -webkit-transform: translateY(1000px);
+    opacity: 0;
+  }
+  /* line 293, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  to {
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-moz-keyframes slideFromBottom {
+  /* line 296, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  from {
+    -moz-transform: translateY(1000px);
+    opacity: 0;
+  }
+  /* line 297, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  to {
+    -moz-transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-o-keyframes slideFromBottom {
+  /* line 300, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  from {
+    -o-transform: translateY(1000px);
+    opacity: 0;
+  }
+  /* line 301, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  to {
+    -o-transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideFromBottom {
+  /* line 304, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  from {
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  /* line 305, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/**
+ * Fade in while sliding in from the right
+ */
+@-webkit-keyframes slideFromRight {
+  /* line 312, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+  }
+  /* line 317, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  25% {
+    opacity: 1;
+    -webkit-transform: translateX(75%);
+  }
+  /* line 322, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes slideFromRight {
+  /* line 329, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(100%);
+  }
+  /* line 334, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  25% {
+    opacity: 1;
+    -moz-transform: translateX(75%);
+  }
+  /* line 339, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+@-o-keyframes slideFromRight {
+  /* line 346, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -o-transform: translateX(100%);
+  }
+  /* line 351, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  25% {
+    opacity: 1;
+    -o-transform: translateX(75%);
+  }
+  /* line 356, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+}
+@keyframes slideFromRight {
+  /* line 363, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  /* line 368, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  25% {
+    opacity: 1;
+    transform: translateX(75%);
+  }
+  /* line 373, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/**
+ * Fade in while sliding in from the left
+ */
+@-webkit-keyframes slideFromLeft {
+  /* line 383, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+  }
+  /* line 388, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  25% {
+    opacity: .5;
+    -webkit-transform: translateX(-70%);
+  }
+  /* line 393, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes slideFromLeft {
+  /* line 400, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-100%);
+  }
+  /* line 405, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  25% {
+    opacity: .5;
+    -moz-transform: translateX(-70%);
+  }
+  /* line 410, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+@-o-keyframes slideFromLeft {
+  /* line 417, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -o-transform: translateX(-100%);
+  }
+  /* line 422, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  25% {
+    opacity: .5;
+    -o-transform: translateX(-70%);
+  }
+  /* line 427, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0%);
+  }
+}
+@keyframes slideFromLeft {
+  /* line 434, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    transform: translateX(0%);
+  }
+  /* line 439, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  25% {
+    opacity: 1;
+    transform: translateX(75%);
+  }
+  /* line 444, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+}
+/**
+ * Fade out while sliding to the left
+ */
+@-webkit-keyframes slideOutLeft {
+  /* line 455, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+  /* line 460, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  75% {
+    opacity: 1;
+    -webkit-transform: translateX(-75%);
+  }
+  /* line 465, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+  }
+}
+@-moz-keyframes slideOutLeft {
+  /* line 472, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+  /* line 477, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  75% {
+    opacity: 1;
+    -moz-transform: translateX(-75%);
+  }
+  /* line 482, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 0;
+    -moz-transform: translateX(-100%);
+  }
+}
+@-o-keyframes slideOutLeft {
+  /* line 489, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+  /* line 494, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  75% {
+    opacity: 1;
+    -o-transform: translateX(-75%);
+  }
+  /* line 499, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 0;
+    -o-transform: translateX(-100%);
+  }
+}
+@keyframes slideOutLeft {
+  /* line 506, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  /* line 511, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  75% {
+    opacity: 1;
+    transform: translateX(-75%);
+  }
+  /* line 516, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+/**
+ * Make the background "pulse" slowly
+ */
+@-webkit-keyframes pulseBackground {
+  /* line 527, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    background: rgba(0, 0, 0, 0.02);
+  }
+  /* line 531, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  50% {
+    background: rgba(0, 0, 0, 0.07);
+  }
+  /* line 535, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    background: rgba(0, 0, 0, 0.02);
+  }
+}
+@-moz-keyframes pulseBackground {
+  /* line 541, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    background: rgba(0, 0, 0, 0.02);
+  }
+  /* line 545, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  50% {
+    background: rgba(0, 0, 0, 0.07);
+  }
+  /* line 549, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    background: rgba(0, 0, 0, 0.02);
+  }
+}
+@keyframes pulseBackground {
+  /* line 555, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    background: rgba(0, 0, 0, 0.02);
+  }
+  /* line 559, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  50% {
+    background: rgba(0, 0, 0, 0.07);
+  }
+  /* line 563, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    background: rgba(0, 0, 0, 0.02);
+  }
+}
+/**
+ * Zoom in while fading in, then fade out while staying at full size
+ */
+@-webkit-keyframes zoomInFadeOut {
+  /* line 573, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    -webkit-transform: scale(0);
+  }
+  /* line 582, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  8% {
+    -webkit-transform: scale(1);
+  }
+  /* line 587, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  85% {
+    -webkit-transform: scale(1);
+  }
+  /* line 592, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    -webkit-transform: scale(0);
+  }
+}
+@-moz-keyframes zoomInFadeOut {
+  /* line 600, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    -moz-transform: scale(0);
+    opacity: 0;
+  }
+  /* line 605, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  10% {
+    -moz-transform: scale(1);
+    opacity: 0.75;
+  }
+  /* line 610, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  80% {
+    -moz-transform: scale(1);
+    opacity: 0.75;
+  }
+  /* line 615, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    -moz-transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes zoomInFadeOut {
+  /* line 622, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  /* line 627, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  10% {
+    transform: scale(1);
+    opacity: 0.75;
+  }
+  /* line 632, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  80% {
+    transform: scale(1);
+    opacity: 0.75;
+  }
+  /* line 637, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+/**
+ * Rotate 360 degrees
+ */
+@-webkit-keyframes rotate {
+  /* line 647, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  /* line 648, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotate {
+  /* line 651, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  /* line 652, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-ms-keyframes rotate {
+  /* line 655, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  /* line 656, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+@-o-keyframes rotate {
+  /* line 659, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  from {
+    -o-transform: rotate(0deg);
+  }
+  /* line 660, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  to {
+    -o-transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  /* line 663, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  from {
+    transform: rotate(0deg);
+  }
+  /* line 664, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*
+ * Flip in on X axis
+ */
+@-webkit-keyframes flipInX {
+  /* line 671, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+  /* line 676, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  40% {
+    -webkit-transform: perspective(400px) rotateX(-6deg);
+  }
+  /* line 680, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  70% {
+    -webkit-transform: perspective(400px) rotateX(6deg);
+  }
+  /* line 684, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+@-moz-keyframes flipInX {
+  /* line 690, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    -moz-transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+  /* line 695, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  40% {
+    -moz-transform: perspective(400px) rotateX(-6deg);
+  }
+  /* line 699, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  70% {
+    -moz-transform: perspective(400px) rotateX(6deg);
+  }
+  /* line 703, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    -moz-transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+@-o-keyframes flipInX {
+  /* line 709, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    -o-transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+  /* line 714, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  40% {
+    -o-transform: perspective(400px) rotateX(-6deg);
+  }
+  /* line 718, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  70% {
+    -o-transform: perspective(400px) rotateX(6deg);
+  }
+  /* line 722, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    -o-transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+@keyframes flipInX {
+  /* line 728, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  0% {
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+  /* line 733, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  40% {
+    transform: perspective(400px) rotateX(-6deg);
+  }
+  /* line 737, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  70% {
+    transform: perspective(400px) rotateX(6deg);
+  }
+  /* line 741, /Users/bstahl/projects/l-kate-interiors/dev/styles/common/animations.less */
+  100% {
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
 /* Drop shadows */
 /* Rounded Corners */
 /* Transitions */
@@ -2334,11 +3177,11 @@ a .icon-flip-vertical:before {
 /* ==========================================================================
    Base styles
    ========================================================================== */
-/* line 11, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 12, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 html {
   height: 100%;
 }
-/* line 15, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 16, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 body {
   /*background: 
     linear-gradient(135deg, #FFFFFF 25%, transparent 25%) -25px 0,
@@ -2355,7 +3198,7 @@ body {
 /* ==========================================================================
    Browse Happy prompt
    ========================================================================== */
-/* line 33, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 34, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -2379,7 +3222,7 @@ body {
   font-weight: 300;
   font-style: normal;
 }
-/* line 60, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 61, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 header {
   background: #d1d2d4;
   width: 100%;
@@ -2389,7 +3232,7 @@ header {
   text-shadow: 2px 2px 2px #969696;
   text-transform: uppercase;
 }
-/* line 70, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 71, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 h2.logo {
   font-size: 190px;
   font-weight: 100;
@@ -2398,7 +3241,7 @@ h2.logo {
   -webkit-font-smoothing: antialiased;
   line-height: 167px;
 }
-/* line 79, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 80, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 h1 {
   font-size: 21px;
   font-weight: 100;
@@ -2407,15 +3250,34 @@ h1 {
   padding: 0 0 12px 0;
   -webkit-font-smoothing: antialiased;
 }
+/* line 89, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+h1,
+h2 {
+  -moz-animation: fadeIn 1s ease;
+  -ms-animation: fadeIn 1s ease;
+  -o-animation: fadeIn 1s ease;
+  -webkit-animation: fadeIn 1s ease;
+  animation: fadeIn 1s ease;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
 /* ==========================================================================
    BODY
    ========================================================================== */
-/* line 95, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 103, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .wrap {
   width: 960px;
   margin: 0 auto;
 }
-/* line 99, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 108, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .col1,
 .col2,
 .col3,
@@ -2425,54 +3287,107 @@ h1 {
   margin: 0 1px;
   display: inline-block;
 }
-/* line 109, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 118, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .col1 {
   background: url('../img/1-trim.png') no-repeat left top;
 }
-/* line 112, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 121, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .col2 {
   background: url('../img/2-trim.png') no-repeat left top;
 }
-/* line 115, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 124, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .col3 {
   background: url('../img/3-trim.png') no-repeat left top;
 }
-/* line 118, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 127, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .col4 {
   background: url('../img/4-trim.png') no-repeat left top;
+}
+/* line 131, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.col1,
+.col4 {
+  -moz-animation: fadeIn 1s ease;
+  -ms-animation: fadeIn 1s ease;
+  -o-animation: fadeIn 1s ease;
+  -webkit-animation: fadeIn 1s ease;
+  animation: fadeIn 1s ease;
+  -moz-animation-delay: 2s;
+  -ms-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+/* line 138, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.col2,
+.col3 {
+  -moz-animation: fadeIn 1s ease;
+  -ms-animation: fadeIn 1s ease;
+  -o-animation: fadeIn 1s ease;
+  -webkit-animation: fadeIn 1s ease;
+  animation: fadeIn 1s ease;
+  -moz-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 /* ==========================================================================
    FOOTER
    ========================================================================== */
-/* line 128, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 150, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .info {
   width: 100%;
   height: 189px;
   background: #d1d2d4;
   padding-top: 10px;
 }
-/* line 135, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 157, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .info-wrap {
   width: 60%;
   margin: 0 auto;
+  -moz-animation: fadeIn 1s ease;
+  -ms-animation: fadeIn 1s ease;
+  -o-animation: fadeIn 1s ease;
+  -webkit-animation: fadeIn 1s ease;
+  animation: fadeIn 1s ease;
+  -moz-animation-delay: 3s;
+  -ms-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
-/* line 140, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 165, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .images-wrap {
   height: 312px;
 }
-/* line 144, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 169, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .inquiries {
   width: 100%;
   text-align: center;
   padding-top: 0px;
 }
-/* line 150, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 175, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .projects {
   width: 100%;
   text-align: center;
   padding-top: 15px;
 }
-/* line 156, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 181, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .info a,
 .info a:active,
 .info a:visited {
@@ -2480,24 +3395,32 @@ h1 {
   color: #6B6C6D;
   text-transform: uppercase;
 }
-/* line 164, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 189, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .info a:hover {
   color: #000;
 }
-/* line 169, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 194, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .phone,
 .mail,
 .facebook {
   display: inline-block;
 }
-/* line 175, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 200, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.mail {
+  margin-left: 20px;
+}
+/* line 204, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+.mail:hover {
+  opacity: 0.7;
+}
+/* line 208, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .nav-item {
   display: inline-block;
   text-transform: uppercase;
   margin-bottom: 4px;
   font-weight: 100;
 }
-/* line 182, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 215, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 h3,
 h3:visited,
 h3:active {
@@ -2505,22 +3428,22 @@ h3:active {
   font-weight: 300;
   color: #000;
 }
-/* line 190, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 223, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 h3:hover {
   color: #6B6C6D;
 }
-/* line 194, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 227, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .nav-item p {
   display: inline;
   font-size: 14px;
   margin-left: 10px;
 }
-/* line 201, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 234, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .nav-item i {
   display: inline;
   font-size: 15px;
 }
-/* line 206, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 239, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .phone-icon {
   font-family: FontAwesome;
   font-weight: normal;
@@ -2536,7 +3459,7 @@ h3:hover {
 /*
  * Image replacement
  */
-/* line 219, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 252, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .ir {
   background-color: transparent;
   border: 0;
@@ -2545,7 +3468,7 @@ h3:hover {
 
   *text-indent: -9999px;
 }
-/* line 227, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 260, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .ir:before {
   content: "";
   display: block;
@@ -2555,7 +3478,7 @@ h3:hover {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 238, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 271, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -2563,7 +3486,7 @@ h3:hover {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 247, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 280, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -2578,7 +3501,7 @@ h3:hover {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 263, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 296, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -2591,7 +3514,7 @@ h3:hover {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 277, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 310, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .invisible {
   visibility: hidden;
 }
@@ -2606,7 +3529,7 @@ h3:hover {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 293, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 326, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -2616,7 +3539,7 @@ h3:hover {
   /* 2 */
 
 }
-/* line 299, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 332, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .clearfix:after {
   clear: both;
 }
@@ -2624,7 +3547,7 @@ h3:hover {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 308, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+/* line 341, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
 .clearfix {
   *zoom: 1;
 }
@@ -2635,19 +3558,19 @@ h3:hover {
    ========================================================================== */
 @media only screen and (max-width: 400px) {
   /* Style adjustments for viewports that meet the condition */
-  /* line 320, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  /* line 353, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
   h1 {
     font-size: 16px;
     margin: -26px 0 0 0;
     padding: 0 0 9px 0;
   }
-  /* line 326, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  /* line 359, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
   h2.logo {
     font-size: 136px;
     margin: -10px 0 0 -11px;
     line-height: 149px;
   }
-  /* line 332, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  /* line 365, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
   .col1,
   .col2 {
     height: 203px;
@@ -2655,51 +3578,51 @@ h3:hover {
     margin: 0 1px;
     display: inline-block;
   }
-  /* line 340, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  /* line 373, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
   .col3,
   .col4 {
     display: none;
   }
-  /* line 345, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  /* line 378, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
   .wrap {
     width: 100%;
     margin: 0 auto;
     height: 207px;
   }
-  /* line 351, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  /* line 384, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
   .images-wrap {
     width: 313px;
     margin: 0 auto;
   }
-  /* line 356, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  /* line 389, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
   .info-wrap {
     width: 100%;
   }
-  /* line 360, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  /* line 393, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
   .inquiries,
   .projects {
     padding-top: 0px;
     width: 100%;
     float: none;
   }
-  /* line 367, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  /* line 400, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
   .col1 {
     background: url('../img/1-trim-mb.png') no-repeat left top;
   }
-  /* line 371, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  /* line 404, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
   .col2 {
     background: url('../img/2-trim-mb.png') no-repeat left top;
   }
-  /* line 375, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  /* line 408, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
   .h3 {
     font-size: 13px;
   }
-  /* line 379, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  /* line 412, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
   .nav-item {
     width: 100%;
     font-size: 12px;
   }
-  /* line 384, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
+  /* line 417, /Users/bstahl/projects/l-kate-interiors/dev/styles/main.less */
   .info {
     height: 196px;
     margin-top: -4px;

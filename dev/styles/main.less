@@ -1,4 +1,5 @@
 @import "/dev/styles/common/normalize.less";
+@import "/dev/styles/common/animations.less";
 @import "/dev/styles/common/mixins.less";
 @import "/bower_components/font-awesome/less/font-awesome.less";
 
@@ -85,6 +86,13 @@ h1{
   -webkit-font-smoothing: antialiased;
 }
 
+h1,
+h2{
+  .animation(fadeIn 1s ease);
+  .animation-delay(0s);
+  .animation-fill-mode(both);
+}
+
 /* ==========================================================================
    BODY
    ========================================================================== */
@@ -96,6 +104,7 @@ h1{
   width: 960px;
   margin: 0 auto;
 }
+
 .col1,
 .col2,
 .col3,
@@ -106,7 +115,7 @@ h1{
   display: inline-block;
 }
 
-.col1{
+.col1 {
   background: url('../img/1-trim.png') no-repeat left top;
 }
 .col2{
@@ -119,6 +128,19 @@ h1{
   background: url('../img/4-trim.png') no-repeat left top;
 }
 
+.col1,
+.col4 {
+  .animation(fadeIn 1s ease);
+  .animation-delay(2s);
+  .animation-fill-mode(both);
+}
+
+.col2,
+.col3 {
+  .animation(fadeIn 1s ease);
+  .animation-delay(1s);
+  .animation-fill-mode(both);
+}
 
 /* ==========================================================================
    FOOTER
@@ -135,6 +157,9 @@ h1{
 .info-wrap{
   width: 60%;
   margin: 0 auto;
+  .animation(fadeIn 1s ease);
+  .animation-delay(3s);
+  .animation-fill-mode(both);
 }
 
 .images-wrap{
@@ -170,6 +195,14 @@ h1{
 .mail,
 .facebook {
   display: inline-block;
+}
+
+.mail{
+  margin-left: 20px;
+}
+
+.mail:hover{
+  opacity: 0.7;
 }
 
 .nav-item{
